@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "934562816321",
+    "project_id": "fireship-course-quizzapp",
+    "storage_bucket": "fireship-course-quizzapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934562816321:android:835bcda4630f0de3a081c0",
+        "android_client_info": {
+          "package_name": "io.barsan.quizzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934562816321-ngapanlnd519262hguo0na5urs884q0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.barsan.quizzapp",
+            "certificate_hash": "0dbeeb171acdcc88b407c08020ad701cad8ccbc4"
+          }
+        },
+        {
+          "client_id": "934562816321-f8sn3lim5p6af0hkj79avkaa26qgt2at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdjqwpx9_hJtAly9j6nZb2Has8Z3HihVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934562816321-f8sn3lim5p6af0hkj79avkaa26qgt2at.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "934562816321-b7fee8jh7co8aur44vt94psft7kpgjq2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.barsan.quizzapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
