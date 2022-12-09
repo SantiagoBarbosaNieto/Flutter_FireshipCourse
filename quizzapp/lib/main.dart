@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 // Import the firebase_core plugin
 import 'package:firebase_core/firebase_core.dart';
 import 'package:quizzapp/routes.dart';
+import 'package:quizzapp/shared/error.dart';
+import 'package:quizzapp/shared/loading.dart';
 import 'package:quizzapp/theme.dart';
 
 void main() {
@@ -47,7 +49,7 @@ class _RootState extends State<Root> {
         builder: (context, snapshot) {
           // Check for errors
           if (snapshot.hasError) {
-            return const Text("Error");
+            return ErrorScreen(errorMessage: snapshot.error.toString());
           }
           debugPrint(snapshot.connectionState.name);
           // Once complete, show your application
@@ -59,7 +61,7 @@ class _RootState extends State<Root> {
           }
 
           // Otherwise, show something whilst waiting for initialization to complete
-          return const Text("Loading");
+          return const LoadingScreen();
         });
   }
 }

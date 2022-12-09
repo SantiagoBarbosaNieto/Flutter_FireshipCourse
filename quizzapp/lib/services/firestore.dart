@@ -8,6 +8,8 @@ class FirestoreService {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
 
   Future<List<Topic>> getTopics() async {
+    print("GET TOPICS");
+    print(AuthService().user?.email);
     var ref = _db.collection('topics');
     var snapshot = await ref.get();
     var data = snapshot.docs.map((s) => s.data());
