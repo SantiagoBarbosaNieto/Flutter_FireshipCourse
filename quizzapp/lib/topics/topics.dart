@@ -6,6 +6,7 @@ import 'package:quizzapp/shared/loading.dart';
 import 'package:quizzapp/topics/topic_item.dart';
 
 import '../services/models.dart';
+import 'drawer.dart';
 
 class TopicsScreen extends StatelessWidget {
   const TopicsScreen({super.key});
@@ -26,6 +27,7 @@ class TopicsScreen extends StatelessWidget {
               backgroundColor: Colors.deepPurple,
               title: const Text('Topics'),
             ),
+            drawer: TopicDrawer(topics: topics),
             body: GridView.count(
               primary: false,
               padding: const EdgeInsets.all(20.0),
